@@ -26,9 +26,9 @@ public class OddNumberedUnpaired {
     public int findBetter(int[] A) {
         Set<Integer> numbers = new HashSet<>();
 
-        for (int i = 0; i < A.length; i++) {
-            if (!numbers.remove(A[i])){
-                numbers.add(A[i]);
+        for (int j : A) {
+            if (!numbers.remove(j)) {
+                numbers.add(j);
             }
         }
 
